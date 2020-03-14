@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Playfair Display', serif;
+  color: #222;
+}
+.navbar {
+  padding: .8rem;
+}
+.navbar-brand img {
+  height: 2rem;
+}
+.navbar-nav li {
+  padding-right: 1.1rem;
+}
+.nav-link {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.nav-link:hover,
+.nave-link.active {
+  border-bottom: .1rem solid #563d71;
+}
+.carousel-inner img {
+  width: 100%;
+}
+.carousel-caption {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 47%;
+}
+.carousel-caption h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-shadow: .1rem .1rem 1rem black;
+}
+.carousel-caption h3 {
+  font-size: 2rem;
+  text-shadow: .1rem .1rem .6rem black;
+  padding-bottom: 1rem;
+}
+.btn {
+  font-weight: 500;
+  border-width: medium;
+}
+.jumbotron {
+  padding: 1rem;
+  border-radius: 0;
+}
+.fa-html5 {
+  font-size: 4rem;
+  margin: 1rem;
+  color: #e54d26
+}
+.fa-java {
+  font-size: 4rem;
+  margin: 1rem;
+  color: #e54d26
+}
+.fa-css3-alt {
+  font-size: 4rem;
+  margin: 1rem;
+  color: #2163af;
+}
+.fa-csharp {
+  font-size: 4rem;
+  margin: 1rem;
+  color: solid #563d71;
+}
+
+/*---Media Queries --*/
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
+@media (max-width: 575px) {
+
+}
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 40%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('img/purple.jpg');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+
+
+
